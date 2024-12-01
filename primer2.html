@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lers: Un Mundo en Movimiento</title>
+    <style>
+        /* Reset básico y estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Estructuras principales */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Página de título */
+        .title-page {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .title-image-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .title-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .title-overlay h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .opening-quote {
+            max-width: 800px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .opening-quote p {
+            margin-bottom: 1.5rem;
+        }
+
+        .opening-quote .quote-author {
+            font-size: 0.9rem;
+            text-align: right;
+            margin-top: 1rem;
+            font-style: normal;
+            opacity: 0.8;
+        }
+
+        /* Secciones de contenido */
+        .section {
+            margin: 4rem 0;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Imágenes de sección */
+        .section-image-wrapper {
+            margin: 2rem 0;
+        }
+
+        .section-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .section-image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Citas */
+        blockquote {
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            border-left: 4px solid #333;
+            font-style: italic;
+            background: #f5f5f5;
+        }
+
+        /* Listas */
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .title-image-container {
+                height: 400px;
+            }
+
+            .title-overlay h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-page">
+            <div class="title-image-container">
+                <img src="portada.jpg" alt="Paisaje misterioso de Lers" class="title-image">
+                <div class="title-overlay">
+                    <h1>Bienvenidos a Lers</h1>
+                    <div class="subtitle">Donde lo imposible es solo el principio</div>
+                    <div class="opening-quote">
+                        <p>
+                            El mundo late. No es una metáfora, yo también lo siento. En mis huesos, 
+                            en el temblor de la piedra cuando camino sobre ella, en el susurro del viento
+                            entre ruinas demasiado antiguas para ser recordadas.
+                        </p>
+                        <p>
+                            Es un pulso constante, a veces suave como una caricia, otras... 
+                            inquietante como un tambor de guerra.
+                        </p>
+                        <p class="quote-author">
+                            — Del diario de Lyra Brightstone, Exploradora del Velo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Un Mundo de Misterios y Sombras</h2>
+            <div class="section-image-wrapper">
+                <img src="ruinas_derrelikt.jpg" alt="Ruinas misteriosas en la niebla" class="section-image">
+                <div class="section-image-caption">Ruinas ancestrales emergen de la niebla eterna</div>
+            </div>
+            <p>En Lers, la realidad no siempre es lo que parece. Las ruinas de civilizaciones olvidadas salpican el paisaje como cicatrices de una historia que nadie recuerda completamente.</p>
+            <ul>
+                <li>Ingenieros que forjan máquinas impulsadas por energías que pocos comprenden realmente</li>
+                <li>Comunidades que mantienen rituales antiguos, no por tradición, sino por necesidad</li>
+                <li>Exploradores que a veces... no regresan de sus expediciones</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>El Continente de Orone</h2>
+            <div class="section-image-wrapper">
+                <img src="/api/placeholder/600/300" alt="Mapa antiguo de Orone" class="section-image">
+                <div class="section-image-caption">Fragmento de un antiguo mapa de Orone</div>
+            </div>
+            <p>El vasto continente de Orone desafía toda lógica conocida. Aquí, la realidad misma parece doblarse y transformarse.</p>
+            <blockquote>
+                "He visto árboles que danzan con las auroras, bestias que cargan ciudades en sus espaldas, y puertas que llevan a lugares que los mapas no pueden contener."
+                <cite>- Del diario de una Guardiana de Umbrales</cite>
+            </blockquote>
+        </section>
+
+        <!-- Repite la estructura de section para las demás secciones -->
+    </div>
+</body>
+</html>
